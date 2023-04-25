@@ -10,29 +10,31 @@
 
 ## **UML Diagram**
 
-![image](https://user-images.githubusercontent.com/114624617/234179691-ddbd600d-a360-4ad1-b155-4b53131acdd6.png)
+![image](https://user-images.githubusercontent.com/114624617/234368422-9f32adbe-ab7d-4083-afe0-952ba8db9216.png)
 
 ---
 
-## Base & Derived Class Descriptions
+## Base & Derived Class Descriptions :
 
-## Pokemon Base Class
+### Pokemon Base Class
 
 - Insert brief paragraph about what this class does
 
-#### <u>Constructors</u>
-- Pokemon (happiness, hunger, health, level) : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon</h6>
+#### Constructors
+- **Pokemon (happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon</h6>
 
 #### Getters
 - **int getTurn()** <h6>Returns the turn that the Player is on</h6>
-- string getSpeciesName() : <h6Returns the empty string of the selected Pokemon
+- **string getSpeciesName()** : <h6>Returns the set empty string of the selected Pokemon</h6>
 
 #### Setters
-- **void setTurn(int turnNumber)**  : <h6>Sets the private variable turn equal to turnNumber</h6>
+- **void setTurn(int turnNumber)**  : <h6>Sets the private variable turn to turnNumber</h6>
+- **void setSpeciesName(string pokemonName)** : <h6>Sets the private variable speciesName to pokemonName</h6>
 
 #### Private
 - **string fileName = "saveFile.txt"** : <h6>Names the save file as saveFile.txt</h6>
 - **int turn = 1** : <h6>Sets the turn variable equal to 1 for the first turn</h6>
+- **string speciesName = ""** : <h6>Sets the speciesName variable equal to an empty string to be changed later</h6>
 
 #### Protected
 - **int happiness = 50** : <h6>Sets the beginning happiness stat to 50</h6>
@@ -58,20 +60,21 @@
 
 ---
 
-## Charmander Derived Class
+### FireStarter Derived Class
 
 - Insert brief paragraph about what this class does
 
 #### Constructors 
-- **Charmander(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
+- **FireStarter(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
 <!-- #### Getters
-- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name</h6>
+- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name based on what evolution level they are on</h6>
 
 #### Setters
-- **void setSpeciesName(string name)** <h6>Sets the selected pokemon's name to be itself, and updates after evolution as well</h6>
+- **void setSpeciesName(string pokemonName)** <h6>Sets the selected pokemon's name to be itself that updates after evolution</h6>
   
 #### Private
+- **string speciesName = "Charmander" : <h6>Initializes this selected Pokemon's name to Charmander</h6>
  -->
 
 #### Overriding Functions
@@ -83,21 +86,22 @@
 - **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
 ---
 
-## Bulbasaur Derived Class
+### GrassStarter Derived Class
 
 - Insert brief paragraph about what this class does
 
 
 #### Constructors 
-- **Bulbasaur(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
+- **GrassStarter(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
 <!-- #### Getters
-- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name</h6>
+- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name based on what evolution level they are on</h6>
 
 #### Setters
-- **void setSpeciesName(string name)** <h6>Sets the selected pokemon's name to be itself, and updates after evolution as well</h6>
+- **void setSpeciesName(string pokemonName)** <h6>Sets the selected pokemon's name to be itself that updates after evolution</h6>
   
 #### Private
+- **string speciesName = "Bulbasaur" : <h6>Initializes this selected Pokemon's name to Bulbasaur</h6>
  -->
 
 #### Overriding Functions
@@ -110,20 +114,21 @@
 
 ---
 
-## Squirtle Derived Class
+## WaterStarter Derived Class
 
 - Insert brief paragraph about what this class does
 
 #### Constructors 
-- **Squirtle(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
+- **WaterStarter(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
 <!-- #### Getters
-- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name</h6>
+- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name based on what evolution level they are on</h6>
 
 #### Setters
-- **void setSpeciesName(string name)** <h6>Sets the selected pokemon's name to be itself, and updates after evolution as well</h6>
+- **void setSpeciesName(string pokemonName)** <h6>Sets the selected pokemon's name to be itself that updates after evolution</h6>
   
 #### Private
+- **string speciesName = "Squirtle" : <h6>Initializes this selected Pokemon's name to Squirtle</h6>
  -->
 
 #### Overriding Functions
