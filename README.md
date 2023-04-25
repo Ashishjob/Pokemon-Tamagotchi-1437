@@ -25,6 +25,7 @@
 
 #### Getters
 - **int getTurn()** <h6>Returns the turn that the Player is on</h6>
+- string getSpeciesName() : <h6Returns the empty string of the selected Pokemon
 
 #### Setters
 - **void setTurn(int turnNumber)**  : <h6>Sets the private variable turn equal to turnNumber</h6>
