@@ -141,12 +141,6 @@
 
 ---
 
-## Use Cases
-
-- Talk about how the game works briefly step by step
-
----
-
 ## Pseudocode
 
 - Include the pseudocode here
