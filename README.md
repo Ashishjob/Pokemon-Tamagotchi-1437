@@ -143,6 +143,8 @@
 
 ## Pseudocode
 
-- Include the pseudocode here
+```cpp
+cout << "hello world" << endl;
+```
 
 ---
