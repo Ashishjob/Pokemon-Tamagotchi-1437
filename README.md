@@ -75,9 +75,9 @@
 
 #### Overriding Functions
 - **void train()** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
-- **void heal()** <h6>Calls for the pure virtual heal function in the parent class with unique effects on Charmander and a unique statement to be printed</h6>
-- **void feed()** <h6>Calls for the pure virtual feed function in the parent class with unique effects on Charmander and a unique statement to be printed</h6>
-- **void play()** <h6>Calls for the pure virtual play function in the parent class with unique effects on Charmander and a unique statement to be printed</h6>
+- **void heal()** <h6>Calls for the pure virtual heal function with a unique statement to be printed and these efeects to be made: +10 health, +5 happiness</h6>
+- **void feed()** <h6>Calls for the pure virtual feed function with a unique statement to be printed and these efeects to be made: -5 hunger, +5 health</h6>
+- **void play()** <h6>Calls for the pure virtual play function with a unique statement to be printed and these efeects to be made: +10 happiness, +10 health</h6>
 - **void evolve()** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Charmeleon first and Charizard later</h6>
 - **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
 ---
@@ -101,9 +101,9 @@
 
 #### Overriding Functions
 - **void train()** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
-- **void heal()** <h6>Calls for the pure virtual heal function in the parent class with unique effects on Bulbasaur and a unique statement to be printed</h6>
-- **void feed()** <h6>Calls for the pure virtual feed function in the parent class with unique effects on Bulbasaur and a unique statement to be printed</h6>
-- **void play()** <h6>Calls for the pure virtual play function in the parent class with unique effects on Bulbasaur and a unique statement to be printed</h6>
+- **void heal()** <h6>Calls for the pure virtual heal function with a unique statement to be printed and these efeects to be made: +10 health, +15 happiness</h6>
+- **void feed()** <h6>Calls for the pure virtual feed function with a unique statement to be printed and these efeects to be made: -10 hunger, +5 health</h6>
+- **void play()** <h6>Calls for the pure virtual play function with a unique statement to be printed and these efeects to be made: +5 happiness, +15 hunger</h6>
 - **void evolve()** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Ivysaur and Venusaur later</h6>
 - **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
 
@@ -127,9 +127,9 @@
 
 #### Overriding Functions
 - **void train()** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
-- **void heal()** <h6>Calls for the pure virtual heal function in the parent class with unique effects on Squirtle and a unique statement to be printed</h6>
-- **void feed()** <h6>Calls for the pure virtual feed function in the parent class with unique effects on Squirtle and a unique statement to be printed</h6>
-- **void play()** <h6>Calls for the pure virtual play function in the parent class with unique effects on Squirtle and a unique statement to be printed</h6>
+- **void heal()** <h6>Calls for the pure virtual heal function with a unique statement to be printed and these efeects to be made: +10 health, +10 happiness</h6>
+- **void feed()** <h6>Calls for the pure virtual feed function with a unique statement to be printed and these efeects to be made: -15 hunger, -15 happiness</h6>
+- **void play()** <h6>Calls for the pure virtual play function with a unique statement to be printed and these efeects to be made: +5 happiness, +10 hunger</h6>
 - **void evolve()** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Wartortle and Blastoise later</h6>
 - **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
 
