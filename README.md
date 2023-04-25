@@ -144,7 +144,11 @@
 ## Pseudocode
 
 ```cpp
-cout << "hello world" << endl;
+cout << Welcome Message & Pokemon Logo in ASCII art;
+cout << Message asking if there is a saved file;
+if (answer == 'y'
+cout << Message to select Pokemon from Professor Dan ASCII art and the ACII art of each starter pokemon;
+
 ```
 
 ---
