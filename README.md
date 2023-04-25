@@ -23,66 +23,54 @@
   - Overloaded Constructor that sets up the basic stat levels for the Pokemon
 
 #### Getters
-- **int getHunger()** 
-  - Returns the hunger stat for each Pokemon
-- **int getHealth()** 
-  - Returns the health stat for each Pokemon
-- **int getLevel()** 
-  - Returns the level for each Pokemon
-- **vint getHappiness()** 
-  - Returns the happiness stat for each Pokemon
 - **int getTurn()** 
   - Returns the turn that the Player is on
 
 #### Setters
-- **void setHunger(int hungerLevel)** 
-  - Sets the private variable Hunger
-- **void setHealth(int healthLevel)** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
-- **void setLevel(int pokemonLevel)** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
-- **void setHappiness(int happinessLevel)** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
 - **void setTurn(int turnNumber)** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Sets the private variable turn equal to turnNumber
 
 #### Private
 - **string fileName = "saveFile.txt"**
-  - **
+  - Names the save file as saveFile.txt
 - **int turn = 1**
-  - **
+  - Sets the turn variable equal to 1 for the first turn
+
 #### Protected
 - **int happiness = 50**
-  - **
+  - Sets the beginning happiness stat to 50
 - **int hunger = 50**
-  - **
+  - Sets the beginning hunger stat to 50
 - **int health = 50**
-  - **
+  - Sets the beginning health stat to 50
 - **int level = 1**
-  - **
+  - Sets the beginning level to 1
+
 #### Virtual
 - **virtual void warningCheck()** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Prints the warning message for the stats at risk without the speciesName of the Pokemon
+
 #### Pure Virtual
 - **virtual void heal() = 0** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Makes the heal function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
 - **virtual void feed() = 0** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Makes the feed function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
 - **virtual void play() = 0** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Makes the play function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
 - **virtual void evolve() = 0** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Makes the evolve function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
+
 #### Basic Functions
 - **void viewStats()** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Prints a list of the Pokemon's stats to be easily viewed by the Player
 - **void train()** 
-  - *A function that alter the Pokemon's stats: Level +1; Happiness -10; Hunger +20; Health -20*
+  - A function that alter the Pokemon's stats: Level +1; Happiness -10; Hunger +20; Health -20
 - **void loadGame()** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Loads up the player's previous playtime with their previous Pokemon's stats
 - **void resetGame()** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Deletes the save file for the player after the game is decided as a victory or defeat
 - **void saveGame(saveName, happinessLevel, hungerLevel, healthLevel, level)** 
-  - *Prints a list of the Pokemon's stats to be easily viewed by the Player*
+  - Saves the Pokemon's current stats to a .txt file that can be accessed when the player returns
 
 
 
