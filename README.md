@@ -18,60 +18,131 @@
 
 ## Pokemon Base Class
 
-#### Constructors
-- Pokemon (happiness, hunger, health, level)
-  - Overloaded Constructor that sets up the basic stat levels for the Pokemon
+- Insert brief paragraph about what this class does
+
+#### <u>Constructors</u>
+- Pokemon (happiness, hunger, health, level) : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon</h6>
 
 #### Getters
-- **int getTurn()** 
-  - Returns the turn that the Player is on
+- **int getTurn()** <h6>Returns the turn that the Player is on</h6>
 
 #### Setters
-- **void setTurn(int turnNumber)** 
-  - Sets the private variable turn equal to turnNumber
+- **void setTurn(int turnNumber)**  : <h6>Sets the private variable turn equal to turnNumber</h6>
 
 #### Private
-- **string fileName = "saveFile.txt"**
-  - Names the save file as saveFile.txt
-- **int turn = 1**
-  - Sets the turn variable equal to 1 for the first turn
+- **string fileName = "saveFile.txt"** : <h6>Names the save file as saveFile.txt</h6>
+- **int turn = 1** : <h6>Sets the turn variable equal to 1 for the first turn</h6>
 
 #### Protected
-- **int happiness = 50**
-  - Sets the beginning happiness stat to 50
-- **int hunger = 50**
-  - Sets the beginning hunger stat to 50
-- **int health = 50**
-  - Sets the beginning health stat to 50
-- **int level = 1**
-  - Sets the beginning level to 1
+- **int happiness = 50** : <h6>Sets the beginning happiness stat to 50</h6>
+- **int hunger = 50** : <h6>Sets the beginning hunger stat to 50</h6>
+- **int health = 50** : <h6>Sets the beginning health stat to 50</h6>
+- **int level = 1** : <h6>Sets the beginning level to 1</h6>
 
 #### Virtual
-- **virtual void warningCheck()** 
-  - Prints the warning message for the stats at risk without the speciesName of the Pokemon
+- **virtual void warningCheck()**  : <h6>Prints the warning message for the stats at risk without the speciesName of the Pokemon</h6>
+- **virtual void train()**  : <h6>A function that alter the Pokemon's stats: Level +1; Happiness -10; Hunger +20; Health -20 without any statements</h6>
 
 #### Pure Virtual
-- **virtual void heal() = 0** 
-  - Makes the heal function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
-- **virtual void feed() = 0** 
-  - Makes the feed function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
-- **virtual void play() = 0** 
-  - Makes the play function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
-- **virtual void evolve() = 0** 
-  - Makes the evolve function accessible to all Pokemon, however, the result of this function will be different to each Pokemon
+- **virtual void heal() = 0**  : <h6>Makes the heal function accessible to all Pokemon, however, the result of this function will be different to each Pokemon</h6>
+- **virtual void feed() = 0**  : <h6>Makes the feed function accessible to all Pokemon, however, the result of this function will be different to each Pokemon</h6>
+- **virtual void play() = 0**  : <h6>Makes the play function accessible to all Pokemon, however, the result of this function will be different to each Pokemon</h6>
+- **virtual void evolve() = 0**  : <h6>Makes the evolve function accessible to all Pokemon, however, the result of this function will be different to each Pokemon</h6>
 
-#### Basic Functions
-- **void viewStats()** 
-  - Prints a list of the Pokemon's stats to be easily viewed by the Player
-- **void train()** 
-  - A function that alter the Pokemon's stats: Level +1; Happiness -10; Hunger +20; Health -20
-- **void loadGame()** 
-  - Loads up the player's previous playtime with their previous Pokemon's stats
-- **void resetGame()** 
-  - Deletes the save file for the player after the game is decided as a victory or defeat
-- **void saveGame(saveName, happinessLevel, hungerLevel, healthLevel, level)** 
-  - Saves the Pokemon's current stats to a .txt file that can be accessed when the player returns
+#### Game Functions
+- **void viewStats()**  : <h6>Prints a list of the Pokemon's stats to be easily viewed by the Player</h6>
+- **void loadGame()**  : <h6>Loads up the player's previous playtime with their previous Pokemon's stats</h6>
+- **void resetGame()**  : <h6>Deletes the save file for the player after the game is decided as a victory or defeat</h6>
+- **void saveGame(saveName, happinessLevel, hungerLevel, healthLevel, level)**  : <h6>Saves the Pokemon's current stats to a .txt file that can be accessed when the player returns</h6>
+
+---
+
+## Charmander Derived Class
+
+- Insert brief paragraph about what this class does
+
+#### Constructors 
+- **Charmander(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
+
+<!-- #### Getters
+- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name</h6>
+
+#### Setters
+- **void setSpeciesName(string name)** <h6>Sets the selected pokemon's name to be itself, and updates after evolution as well</h6>
+  
+#### Private
+ -->
+
+#### Overriding Functions
+- **void train()** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
+- **void heal()** <h6>Calls for the pure virtual heal function in the parent class with unique effects on Charmander and a unique statement to be printed</h6>
+- **void feed()** <h6>Calls for the pure virtual feed function in the parent class with unique effects on Charmander and a unique statement to be printed</h6>
+- **void play()** <h6>Calls for the pure virtual play function in the parent class with unique effects on Charmander and a unique statement to be printed</h6>
+- **void evolve()** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Charmeleon first and Charizard later</h6>
+- **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
+---
+
+## Bulbasaur Derived Class
+
+- Insert brief paragraph about what this class does
 
 
+#### Constructors 
+- **Bulbasaur(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
+<!-- #### Getters
+- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name</h6>
 
+#### Setters
+- **void setSpeciesName(string name)** <h6>Sets the selected pokemon's name to be itself, and updates after evolution as well</h6>
+  
+#### Private
+ -->
+
+#### Overriding Functions
+- **void train()** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
+- **void heal()** <h6>Calls for the pure virtual heal function in the parent class with unique effects on Bulbasaur and a unique statement to be printed</h6>
+- **void feed()** <h6>Calls for the pure virtual feed function in the parent class with unique effects on Bulbasaur and a unique statement to be printed</h6>
+- **void play()** <h6>Calls for the pure virtual play function in the parent class with unique effects on Bulbasaur and a unique statement to be printed</h6>
+- **void evolve()** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Ivysaur and Venusaur later</h6>
+- **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
+
+---
+
+## Squirtle Derived Class
+
+- Insert brief paragraph about what this class does
+
+#### Constructors 
+- **Squirtle(happiness, hunger, health, level)** : <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
+
+<!-- #### Getters
+- **string getSpeciesName()** <h6>Returns the specific name of the Pokemon's species name</h6>
+
+#### Setters
+- **void setSpeciesName(string name)** <h6>Sets the selected pokemon's name to be itself, and updates after evolution as well</h6>
+  
+#### Private
+ -->
+
+#### Overriding Functions
+- **void train()** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
+- **void heal()** <h6>Calls for the pure virtual heal function in the parent class with unique effects on Squirtle and a unique statement to be printed</h6>
+- **void feed()** <h6>Calls for the pure virtual feed function in the parent class with unique effects on Squirtle and a unique statement to be printed</h6>
+- **void play()** <h6>Calls for the pure virtual play function in the parent class with unique effects on Squirtle and a unique statement to be printed</h6>
+- **void evolve()** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Wartortle and Blastoise later</h6>
+- **void warningCheck()** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
+
+---
+
+## Use Cases
+
+- Talk about how the game works briefly step by step
+
+---
+
+## Pseudocode
+
+- Include the pseudocode here
+
+---
