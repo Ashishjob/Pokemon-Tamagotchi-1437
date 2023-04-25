@@ -18,7 +18,7 @@
 
 ### Pokemon Base Class
 
-- Insert brief paragraph about what this class does
+- The Pokemon base class is used to set the common characteristics and functionalities of each Pokemon- through initializing its stats and it has virtual classes that get overridden by the derived classes that effect its stats to output a different message. In addition to these, it also includes game functions that can save, load, and/or reset the game.
 
 #### Constructors
 - **Pokemon (happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon</h6>
@@ -62,7 +62,7 @@
 
 ### FireStarter Derived Class
 
-- Insert brief paragraph about what this class does
+- The FireStarter base class is used to set the characteristics and functionalities of Charmander - through initializing its stats and overrides the virtual functions in the parent class that effect its stats and output messages.
 
 #### Constructors 
 - **FireStarter(happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
@@ -88,7 +88,7 @@
 
 ### GrassStarter Derived Class
 
-- Insert brief paragraph about what this class does
+- The GrassStarter base class is used to set the characteristics and functionalities of Bulbasaur - through initializing its stats and overrides the virtual functions in the parent class that effect its stats and output messages.
 
 
 #### Constructors 
@@ -116,7 +116,7 @@
 
 ## WaterStarter Derived Class
 
-- Insert brief paragraph about what this class does
+- The WaterStarter base class is used to set the characteristics and functionalities of Squirtle - through initializing its stats and overrides the virtual functions in the parent class that effect its stats and output messages.
 
 #### Constructors 
 - **WaterStarter(happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
