@@ -8,4 +8,4 @@ TamaGatch ‘Em All is a Pokemon-based Tamagotchi (puns-intended) in which a pla
 
 ## **UML Diagram**
 
-![image](https://user-images.githubusercontent.com/114624617/234158896-0d600149-d986-4238-b6ea-31dbd64e6a52.png)
+![image](https://user-images.githubusercontent.com/114624617/234163813-c1b16edc-824c-4ecd-a20a-734e9e1e2af1.png)
