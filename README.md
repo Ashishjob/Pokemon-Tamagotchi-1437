@@ -10,7 +10,7 @@
 
 ## **UML Diagram**
 
-![image](https://user-images.githubusercontent.com/114624617/234368422-9f32adbe-ab7d-4083-afe0-952ba8db9216.png)
+![image](https://user-images.githubusercontent.com/114624617/234475764-76a48e5a-2a77-4f03-a68b-db452d0c7fc8.png)
 
 ---
 
@@ -24,11 +24,9 @@
 - **Pokemon (happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon</h6>
 
 #### Getters
-- **int getTurn();** <h6>Returns the turn that the Player is on</h6>
 - **string getSpeciesName();** <h6>Returns the set empty string of the selected Pokemon</h6>
 
 #### Setters
-- **void setTurn(int turnNumber);**  <h6>Sets the private variable turn to turnNumber</h6>
 - **void setSpeciesName(string pokemonName);** <h6>Sets the private variable speciesName to pokemonName</h6>
 
 #### Private
@@ -44,7 +42,8 @@
 
 #### Virtual
 - **virtual void warningCheck();**  <h6>Prints the warning message for the stats at risk without the speciesName of the Pokemon</h6>
-- **virtual void train();**  <h6>A function that alter the Pokemon's stats: Level +1; Happiness -10; Hunger +20; Health -20 without any statements</h6>
+- **virtual void train();**  <h6>A function that alters the Pokemon's stats: Level +1, Happiness -10, Hunger +20, Health -20 without any statements</h6>
+- **virtual void limitControl();** <h6>A function that does not allow stats to go beyond their best possible limits (100 happiness, 100 health, 0 hunger)
 
 #### Pure Virtual
 - **virtual void heal() = 0;**  <h6>Makes the heal function accessible to all Pokemon, however, the result of this function will be different to each Pokemon</h6>
@@ -84,6 +83,7 @@
 - **void play();** <h6>Calls for the pure virtual play function with a unique statement to be printed and these efeects to be made: +10 happiness, +10 health</h6>
 - **void evolve();** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Charmeleon first and Charizard later</h6>
 - **void warningCheck();** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
+- **void limitControl();** <h6>Calls for the virtual limitControl function in the parent class with the different stats for the selected Pokemon</h6>
 ---
 
 ### GrassStarter Derived Class
@@ -111,6 +111,7 @@
 - **void play();** <h6>Calls for the pure virtual play function with a unique statement to be printed and these efeects to be made: +5 happiness, +15 hunger</h6>
 - **void evolve();** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Ivysaur and Venusaur later</h6>
 - **void warningCheck();** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
+- **void limitControl();** <h6>Calls for the virtual limitControl function in the parent class with the different stats for the selected Pokemon</h6>
 
 ---
 
@@ -138,6 +139,53 @@
 - **void play();** <h6>Calls for the pure virtual play function with a unique statement to be printed and these efeects to be made: +5 happiness, +10 hunger</h6>
 - **void evolve();** <h6>Calls for the pure virtual evolve function in the parent class with unique art based on its evolutions and unique statements to be printed, and changes the Pokemons name to Wartortle and Blastoise later</h6>
 - **void warningCheck();** <h6>Calls for the virtual warningCheck function in the parent class with changes in the printed statement in the Pokemon's name</h6>
+- **void limitControl();** <h6>Calls for the virtual limitControl function in the parent class with the different stats for the selected Pokemon</h6>
+
+---
+## Use Cases
+
+**1: User selects to load their previously saved game**
+- ##### The program reads the saveFile.txt and resets all the variables to the variables in the file
+- ##### With the variables set in place the game continues and finds the previously selected Pokemon and enters the respective while loop
+
+**2: User selects Bulbasaur**
+- ##### The program shows user the ASCII art of Bulbasaur and a menu of actions to choose from
+- ##### The user enters the train option : The program prints a unique text about Bulbasaur being trained
+    - ###### (Level +1, Happiness -10, Hunger +20, Health -20)
+- ##### The user enters heal option: The program prints a unique text about Bulbasaur being healed and applies unique effects to Bulbasaur's stats
+    - ###### (+10 health, +15 happiness)
+- ##### The user enters the feed option : The program prints a unique text about Bulbasaur being fed and applies unique effects to Bulbasaur's stats
+    - ###### (-10 hunger, +5 health)
+- ##### The user enters the play option : The program prints a unique text about Bulbasaur being played with and applies unique effects to Bulbasaur's stats
+    - ###### (+5 happiness, +15 hunger)
+- ##### The user enters the viewStats option : The program prints a unique text with Bulbasaur's stats
+
+**3: User selects Squirtle**
+- ##### The program shows user the ASCII art of Squirtle and a menu of actions to choose from
+- ##### The user enters the train option : The program prints a unique text about Squirtle being trained
+    - ###### (Level +1, Happiness -10, Hunger +20, Health -20)
+- ##### The user enters heal option: The program prints a unique text about Squirtle being healed and applies unique effects to Squirtle's stats
+    - ###### (+10 health, +10 happiness)
+- ##### The user enters the feed option : The program prints a unique text about Squirtle being fed and applies unique effects to Squirtle's stats
+    - ###### (-15 hunger, -15 happiness)
+- ##### The user enters the play option : The program prints a unique text about Squirtle being played with and applies unique effects to Squirtle's stats
+    - ###### (+5 happiness, +10 hunger)
+- ##### The user enters the viewStats option : The program prints a unique text with Squirtle's stats
+
+**4: User selects Charmander**
+- ##### The program shows user the ASCII art of Charmander and a menu of actions to choose from
+- ##### The user enters the train option : The program prints a unique text about Charmander being trained
+    - ###### (Level +1, Happiness -10, Hunger +20, Health -20)
+- ##### The user enters heal option: The program prints a unique text about Charmander being healed and applies unique effects to Charmander's stats 
+    - ###### (+10 health, +5 happiness)
+- ##### The user enters the feed option : The program prints a unique text about Charmander being fed and applies unique effects to Charmander's stats
+    - ###### (-5 hunger, +5 health)
+- ##### The user enters the play option : The program prints a unique text about Charmander being played with and applies unique effects to Charmander's stats
+    - ###### (+10 happiness, +10 health)
+- ##### The user enters the viewStats option : The program prints a unique text with Charmander's stats
+
+**5: User selects to save game**
+- ##### The program takes the current variables and places them within the saveFile.txt
 
 ---
 
