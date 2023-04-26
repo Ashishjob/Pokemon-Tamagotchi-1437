@@ -67,7 +67,7 @@
 #### Constructors 
 - **FireStarter(happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
-<!-- #### Getters
+#### Getters
 - **string getSpeciesName();** <h6>Returns the specific name of the Pokemon's species name based on what evolution level they are on</h6>
 
 #### Setters
@@ -75,7 +75,7 @@
   
 #### Private
 - **string speciesName = "Charmander";** <h6>Initializes this selected Pokemon's name to Charmander</h6>
- -->
+
 
 #### Overriding Functions
 - **void train();** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
@@ -94,7 +94,7 @@
 #### Constructors 
 - **GrassStarter(happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
-<!-- #### Getters
+#### Getters
 - **string getSpeciesName();** <h6>Returns the specific name of the Pokemon's species name based on what evolution level they are on</h6>
 
 #### Setters
@@ -102,7 +102,7 @@
   
 #### Private
 - **string speciesName = "Bulbasaur";** <h6>Initializes this selected Pokemon's name to Bulbasaur</h6>
- -->
+
 
 #### Overriding Functions
 - **void train();** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
@@ -121,7 +121,7 @@
 #### Constructors 
 - **WaterStarter(happiness, hunger, health, level);** <h6>Overloaded Constructor that sets up the basic stat levels for the Pokemon and includes the proper speciesName</h6>
 
-<!-- #### Getters
+#### Getters
 - **string getSpeciesName();** <h6>Returns the specific name of the Pokemon's species name based on what evolution level they are on</h6>
 
 #### Setters
@@ -129,7 +129,7 @@
   
 #### Private
 - **string speciesName = "Squirtle";** <h6>Initializes this selected Pokemon's name to Squirtle</h6>
- -->
+
 
 #### Overriding Functions
 - **void train();** <h6>Calls for the virtual train function in the parent class with and adds a unique statement to be printed</h6>
@@ -144,31 +144,30 @@
 ## Pseudocode
 
 ```python
-print Welcome Message & Pokemon Logo in ASCII art;
-print Message asking if there is a saved file;
-take input answer;
+print (Welcome Message & Pokemon Logo in ASCII art)
+print (Message asking if there is a saved file)
+take input answer
 
-if (answer == 'y'):
+if (answer = 'y'):
     take an input from the save file
 
 else:
-    print Message to select Pokemon from Professor Dan ASCII art and the ACII art of each starter pokemon
+    print (Message to select Pokemon from Professor Dan ASCII art and the ACII art of each starter pokemon)
     output the contents from the .txt files with the ASCII art for the starter Pokemon
-    print  "Which one would you like"
-    take input selectionNumber;
-}
+    print ("Which one would you like")
+    take input selectionNumber
 
-while (selectionNumber != 1 or 2 or 3) :
-    print "That is not  an appropriate number to put in, please input again"
-    cin >> selectionNumber;
+while (selectionNumber != 1 or 2 or 3):
+    print ("That is not  an appropriate number to put in, please input again")
+    take input selectionNumber
 
-    if (selectionNumber == 1) {
-        GrassStarter choice1;
+    if (selectionNumber == 1):
+        GrassStarter choice1
         choice1.GrassStarter() // use the default constructor and setter values to get the beginning variables set in place
-        cout << "Great, now lets begin growing your Bulbasaur!!!"
+        print ("Great, now lets begin growing your Bulbasaur!!!")
         
-        while (gameFinish == false) {
-            cout << "What actions would you like to do with your Bulbasaur:
+        while (gameFinish == false): 
+            print ("What actions would you like to do with your Bulbasaur:
             
             ---------------------------------
             | 1 - Train your Pokemon        |
@@ -176,57 +175,53 @@ while (selectionNumber != 1 or 2 or 3) :
             | 3 - Feed your Pokemon         |
             | 4 - Play with your Pokemon    |
             | 5 - View your Pokemon's stats |
-            ---------------------------------
-            cin >> chosenAction;
+            --------------------------------- ")
+            take input chosenAction
             
-            if (chosenAction == 1) {
+            if (chosenAction == 1):
                 // train function is called
-            }
-            else if (chosenAction == 2) {
+                
+            elif (chosenAction == 2):
                 // heal function is called
-            }
-            else if (chosenAction == 3) {
+                
+            elif (chosenAction == 3):
                 // feed function is called
-            }
-            else if (chosenAction == 4) {
+
+            elif (chosenAction == 4):
                 // play function is called
-            }
-            else if (chosenAction == 5) {
+
+            elif (chosenAction == 5):
                 // viewStats function is called
-            }
-            else {
-               cout << "That was not a choice, reselect your option"
-               gameFinish = false;
-            }
-            if (any of the levels are at a risky state) {
+
+            else:
+               print("That was not a choice, reselect your option")
+               gameFinish = false
+
+            if (any of the levels are at a risky state):
                 // warningCheck function is called
-            }
-            if (level == 16) {
-                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
-            }
             
-            if (any single one of the stats reaches 0 or 100) {
-                cout << "boohoo you lost. ratio. bozo"
-                gameFinish = true;
-            }
-            else if (level == 32) {
-                cout << "Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!"
+            if (any single one of the stats reaches an absolute negative):
+                print("boohoo you lost. ratio. bozo")
+                gameFinish = true
+                
+            if (level == 16):
+                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
+
+            elif (level == 32):
+                print("Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!")
                 output the final evolution ASCII art from its .txt file
-                gameFinish = true;
-            }
-            else {
-                gameFinish = false;
-            }
-        }
-    }
+                gameFinish = true
+
+            else:
+                gameFinish = false
 
     if (selectionNumber == 2) {
-        WaterStarter choice2;
+        WaterStarter choice1
         choice1.WaterStarter() // use the default constructor and setter values to get the beginning variables set in place
-        cout << "Great, now lets begin growing your Squirtle!!!"
+        print ("Great, now lets begin growing your Squirtle!!!")
         
-        while (gameFinish == false) {
-            cout << "What actions would you like to do with your Squirtle:
+        while (gameFinish == false): 
+            print ("What actions would you like to do with your Squirtle:
             
             ---------------------------------
             | 1 - Train your Pokemon        |
@@ -234,57 +229,53 @@ while (selectionNumber != 1 or 2 or 3) :
             | 3 - Feed your Pokemon         |
             | 4 - Play with your Pokemon    |
             | 5 - View your Pokemon's stats |
-            ---------------------------------
-            cin >> chosenAction;
+            --------------------------------- ")
+            take input chosenAction
             
-            if (chosenAction == 1) {
+            if (chosenAction == 1):
                 // train function is called
-            }
-            else if (chosenAction == 2) {
+                
+            elif (chosenAction == 2):
                 // heal function is called
-            }
-            else if (chosenAction == 3) {
+                
+            elif (chosenAction == 3):
                 // feed function is called
-            }
-            else if (chosenAction == 4) {
+
+            elif (chosenAction == 4):
                 // play function is called
-            }
-            else if (chosenAction == 5) {
+
+            elif (chosenAction == 5):
                 // viewStats function is called
-            }
-            else {
-               cout << "That was not a choice, reselect your option"
-               gameFinish = false;
-            }
-            if (any of the levels are at a risky state) {
+
+            else:
+               print("That was not a choice, reselect your option")
+               gameFinish = false
+
+            if (any of the levels are at a risky state):
                 // warningCheck function is called
-            }
-            if (level == 16) {
-                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
-            }
             
-            if (any single one of the stats reaches 0 or 100) {
-                cout << "boohoo you lost. ratio. bozo"
-                gameFinish = true;
-            }
-            else if (level == 32) {
-                cout << "Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!"
+            if (any single one of the stats reaches an absolute negative):
+                print("boohoo you lost. ratio. bozo")
+                gameFinish = true
+                
+            if (level == 16):
+                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
+
+            elif (level == 32):
+                print("Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!")
                 output the final evolution ASCII art from its .txt file
-                gameFinish = true;
-            }
-            else {
-                gameFinish = false;
-            }
-        }
-    }
+                gameFinish = true
+
+            else:
+                gameFinish = false
 
     if (selectionNumber == 3) {
-        FireStarter choice3;
+       FireStarter choice1
         choice1.FireStarter() // use the default constructor and setter values to get the beginning variables set in place
-        cout << "Great, now lets begin growing your Charmander!!!"
+        print ("Great, now lets begin growing your Charmander!!!")
         
-        while (gameFinish == false) {
-            cout << "What actions would you like to do with your Charmander:
+        while (gameFinish == false): 
+            print ("What actions would you like to do with your Charmander:
             
             ---------------------------------
             | 1 - Train your Pokemon        |
@@ -292,50 +283,45 @@ while (selectionNumber != 1 or 2 or 3) :
             | 3 - Feed your Pokemon         |
             | 4 - Play with your Pokemon    |
             | 5 - View your Pokemon's stats |
-            ---------------------------------
-            cin >> chosenAction;
+            --------------------------------- ")
+            take input chosenAction
             
-            if (chosenAction == 1) {
+            if (chosenAction == 1):
                 // train function is called
-            }
-            else if (chosenAction == 2) {
+                
+            elif (chosenAction == 2):
                 // heal function is called
-            }
-            else if (chosenAction == 3) {
+                
+            elif (chosenAction == 3):
                 // feed function is called
-            }
-            else if (chosenAction == 4) {
+
+            elif (chosenAction == 4):
                 // play function is called
-            }
-            else if (chosenAction == 5) {
+
+            elif (chosenAction == 5):
                 // viewStats function is called
-            }
-            else {
-               cout << "That was not a choice, reselect your option"
-               gameFinish = false;
-            }
-            if (any of the levels are at a risky state) {
+
+            else:
+               print("That was not a choice, reselect your option")
+               gameFinish = false
+
+            if (any of the levels are at a risky state):
                 // warningCheck function is called
-            }
-            if (level == 16) {
-                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
-            }
             
-            if (any single one of the stats reaches 0 or 100) {
-                cout << "boohoo you lost. ratio. bozo"
-                gameFinish = true;
-            }
-            else if (level == 32) {
-                cout << "Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!"
+            if (any single one of the stats reaches an absolute negative):
+                print("boohoo you lost. ratio. bozo")
+                gameFinish = true
+                
+            if (level == 16):
+                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
+
+            elif (level == 32):
+                print("Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!")
                 output the final evolution ASCII art from its .txt file
-                gameFinish = true;
-            }
-            else {
-                gameFinish = false;
-            }
-        }
-    }    
-}
+                gameFinish = true
+
+            else:
+                gameFinish = false
 ```
 
 ---
