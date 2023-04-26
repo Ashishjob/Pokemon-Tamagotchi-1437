@@ -1,4 +1,4 @@
-# Pokemon-Tamagotchi
+# Tamagotchi Project Preliminary Report
 
 ## **Description**
 
