@@ -143,24 +143,23 @@
 
 ## Pseudocode
 
-```cpp
-cout << Welcome Message & Pokemon Logo in ASCII art;
-cout << Message asking if there is a saved file;
-cin >> answer;
+```python
+print Welcome Message & Pokemon Logo in ASCII art;
+print Message asking if there is a saved file;
+take input answer;
 
-if (answer == 'y') {
+if (answer == 'y'):
     take an input from the save file
+
+else:
+    print Message to select Pokemon from Professor Dan ASCII art and the ACII art of each starter pokemon
+    output the contents from the .txt files with the ASCII art for the starter Pokemon
+    print  "Which one would you like"
+    take input selectionNumber;
 }
 
-else {
-    cout << Message to select Pokemon from Professor Dan ASCII art and the ACII art of each starter pokemon;
-    output the contents from the .txt files with the ASCII art for the starter Pokemon;
-    cout << "Which one would you like"
-    cin >> selectionNumber;
-}
-
-while (selectionNumber != 1 or 2 or 3) {
-    cout << "That is not  an appropriate number to put in, please input again"
+while (selectionNumber != 1 or 2 or 3) :
+    print "That is not  an appropriate number to put in, please input again"
     cin >> selectionNumber;
 
     if (selectionNumber == 1) {
