@@ -146,11 +146,198 @@
 ```cpp
 cout << Welcome Message & Pokemon Logo in ASCII art;
 cout << Message asking if there is a saved file;
+cin >> answer;
+
 if (answer == 'y') {
     take an input from the save file
 }
+
 else {
     cout << Message to select Pokemon from Professor Dan ASCII art and the ACII art of each starter pokemon;
+    output the contents from the .txt files with the ASCII art for the starter Pokemon;
+    cout << "Which one would you like"
+    cin >> selectionNumber;
+}
+
+while (selectionNumber != 1 or 2 or 3) {
+    cout << "That is not  an appropriate number to put in, please input again"
+    cin >> selectionNumber;
+
+    if (selectionNumber == 1) {
+        GrassStarter choice1;
+        choice1.GrassStarter() // use the default constructor and setter values to get the beginning variables set in place
+        cout << "Great, now lets begin growing your Bulbasaur!!!"
+        
+        while (gameFinish == false) {
+            cout << "What actions would you like to do with your Bulbasaur:
+            
+            ---------------------------------
+            | 1 - Train your Pokemon        |
+            | 2 - Heal your Pokemon         |
+            | 3 - Feed your Pokemon         |
+            | 4 - Play with your Pokemon    |
+            | 5 - View your Pokemon's stats |
+            ---------------------------------
+            cin >> chosenAction;
+            
+            if (chosenAction == 1) {
+                // train function is called
+            }
+            else if (chosenAction == 2) {
+                // heal function is called
+            }
+            else if (chosenAction == 3) {
+                // feed function is called
+            }
+            else if (chosenAction == 4) {
+                // play function is called
+            }
+            else if (chosenAction == 5) {
+                // viewStats function is called
+            }
+            else {
+               cout << "That was not a choice, reselect your option"
+               gameFinish = false;
+            }
+            if (any of the levels are at a risky state) {
+                // warningCheck function is called
+            }
+            if (level == 16) {
+                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
+            }
+            
+            if (any single one of the stats reaches 0 or 100) {
+                cout << "boohoo you lost. ratio. bozo"
+                gameFinish = true;
+            }
+            else if (level == 32) {
+                cout << "Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!"
+                output the final evolution ASCII art from its .txt file
+                gameFinish = true;
+            }
+            else {
+                gameFinish = false;
+            }
+        }
+    }
+
+    if (selectionNumber == 2) {
+        WaterStarter choice2;
+        choice1.WaterStarter() // use the default constructor and setter values to get the beginning variables set in place
+        cout << "Great, now lets begin growing your Squirtle!!!"
+        
+        while (gameFinish == false) {
+            cout << "What actions would you like to do with your Squirtle:
+            
+            ---------------------------------
+            | 1 - Train your Pokemon        |
+            | 2 - Heal your Pokemon         |
+            | 3 - Feed your Pokemon         |
+            | 4 - Play with your Pokemon    |
+            | 5 - View your Pokemon's stats |
+            ---------------------------------
+            cin >> chosenAction;
+            
+            if (chosenAction == 1) {
+                // train function is called
+            }
+            else if (chosenAction == 2) {
+                // heal function is called
+            }
+            else if (chosenAction == 3) {
+                // feed function is called
+            }
+            else if (chosenAction == 4) {
+                // play function is called
+            }
+            else if (chosenAction == 5) {
+                // viewStats function is called
+            }
+            else {
+               cout << "That was not a choice, reselect your option"
+               gameFinish = false;
+            }
+            if (any of the levels are at a risky state) {
+                // warningCheck function is called
+            }
+            if (level == 16) {
+                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
+            }
+            
+            if (any single one of the stats reaches 0 or 100) {
+                cout << "boohoo you lost. ratio. bozo"
+                gameFinish = true;
+            }
+            else if (level == 32) {
+                cout << "Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!"
+                output the final evolution ASCII art from its .txt file
+                gameFinish = true;
+            }
+            else {
+                gameFinish = false;
+            }
+        }
+    }
+
+    if (selectionNumber == 3) {
+        FireStarter choice3;
+        choice1.FireStarter() // use the default constructor and setter values to get the beginning variables set in place
+        cout << "Great, now lets begin growing your Charmander!!!"
+        
+        while (gameFinish == false) {
+            cout << "What actions would you like to do with your Charmander:
+            
+            ---------------------------------
+            | 1 - Train your Pokemon        |
+            | 2 - Heal your Pokemon         |
+            | 3 - Feed your Pokemon         |
+            | 4 - Play with your Pokemon    |
+            | 5 - View your Pokemon's stats |
+            ---------------------------------
+            cin >> chosenAction;
+            
+            if (chosenAction == 1) {
+                // train function is called
+            }
+            else if (chosenAction == 2) {
+                // heal function is called
+            }
+            else if (chosenAction == 3) {
+                // feed function is called
+            }
+            else if (chosenAction == 4) {
+                // play function is called
+            }
+            else if (chosenAction == 5) {
+                // viewStats function is called
+            }
+            else {
+               cout << "That was not a choice, reselect your option"
+               gameFinish = false;
+            }
+            if (any of the levels are at a risky state) {
+                // warningCheck function is called
+            }
+            if (level == 16) {
+                // evolve function is called and the middle evolutions ASCII art in the .txt file is output
+            }
+            
+            if (any single one of the stats reaches 0 or 100) {
+                cout << "boohoo you lost. ratio. bozo"
+                gameFinish = true;
+            }
+            else if (level == 32) {
+                cout << "Congrats you've witness your Pokemon travel from its first stage to its final Evolution!!!"
+                output the final evolution ASCII art from its .txt file
+                gameFinish = true;
+            }
+            else {
+                gameFinish = false;
+            }
+        }
+    }    
+}
+
     
 
 
