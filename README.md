@@ -369,7 +369,7 @@ while (selectionNumber != 1 or 2 or 3):
                 gameFinish = true
 
             else:
-                gameFinish = false
+                gameFinish = false 
 ```
 
 ---
