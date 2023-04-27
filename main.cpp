@@ -82,6 +82,7 @@ int main() {
       }
 
       choice1.warningCheck();
+      
       choice1.evolutionCheck();
 
       if (choice1.gameLoss() == true) {
@@ -148,6 +149,7 @@ int main() {
       }
 
       choice2.warningCheck();
+      
       choice2.evolutionCheck();
 
       if (choice2.gameLoss() == true) {
@@ -214,6 +216,7 @@ int main() {
       }
 
       choice3.warningCheck();
+      
       choice3.evolutionCheck();
 
       if (choice3.gameLoss() == true) {
