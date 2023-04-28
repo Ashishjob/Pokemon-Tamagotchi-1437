@@ -60,13 +60,13 @@ void FireStarter::viewStats() {
 }
 
 void FireStarter::warningCheck() {
-    if (health <= 15 && health != 0) {
+    if (health <= 15 && health > 0) {
         cout << "Woah there pal, your " << speciesName << " isn't looking so healthy" << endl;
     }
-    if (hunger >= 85 && hunger != 100) {
+    if (hunger >= 85 && hunger < 100) {
         cout << "You really don't care about how hungry your " << speciesName << " is" << endl;
     }
-    if (happiness <= 15 && happiness != 0) {
+    if (happiness <= 15 && happiness > 0) {
         cout << "Damn, you really don't care about your " << speciesName << "'s happiness" << endl;
     }
 }
