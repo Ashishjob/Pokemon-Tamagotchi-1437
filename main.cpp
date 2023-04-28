@@ -18,7 +18,7 @@ int main() {
     cin >> answer;
 
     if (answer == 'y') {
-        // take an input from the save file
+      // loadGame();
     }
 
     else {
@@ -46,6 +46,7 @@ int main() {
         cout << "| 3 - Feed your Pokemon         |" << endl;
         cout << "| 4 - Play with your Pokemon    |" << endl;
         cout << "| 5 - View your Pokemon's stats |" << endl;
+        cout << "| 6 - Save your game            |" << endl;
         cout << "---------------------------------" << endl;
         
         cin >> chosenAction;
@@ -80,22 +81,20 @@ int main() {
           // viewStats function is called
         }
 
+        else if (chosenAction == 6) {
+          choice1.saveGame();
+          cout << "See you next time!" << endl;
+        }
+
         choice1.warningCheck();
         
         choice1.evolutionCheck();
 
         if (choice1.gameLoss() == true) {
-          cout << "boohoo you lost. ratio. bozo" << endl;
-          gameFinish = true;
-        }
-
-        else if (choice1.gameLoss() == false) {
-          cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
-          // output the final evolution ASCII art from its .txt file
           gameFinish = true;
         }
         
-        else {
+        else if (choice1.gameLoss() == false) {
           choice1.limitControl();
           gameFinish = false;
         }
@@ -115,6 +114,7 @@ int main() {
         cout << "| 3 - Feed your Pokemon         |" << endl;
         cout << "| 4 - Play with your Pokemon    |" << endl;
         cout << "| 5 - View your Pokemon's stats |" << endl;
+        cout << "| 6 - Save your game            |" << endl;
         cout << "---------------------------------" << endl;
         
         cin >> chosenAction;
@@ -147,6 +147,11 @@ int main() {
         else if (chosenAction == 5){
           choice2.viewStats();
           // viewStats function is called
+        }
+
+        else if (chosenAction == 6) {
+          choice2.saveGame();
+          cout << "See you next time!" << endl;
         }
 
         choice2.warningCheck();
@@ -184,6 +189,7 @@ int main() {
         cout << "| 3 - Feed your Pokemon         |" << endl;
         cout << "| 4 - Play with your Pokemon    |" << endl;
         cout << "| 5 - View your Pokemon's stats |" << endl;
+        cout << "| 6 - Save your game            |" << endl;
         cout << "---------------------------------" << endl;
         
         cin >> chosenAction;
@@ -216,6 +222,11 @@ int main() {
         else if (chosenAction == 5){
           choice3.viewStats();
           // viewStats function is called
+        }
+        
+        else if (chosenAction == 6) {
+          choice3.saveGame();
+          cout << "See you next time!" << endl;
         }
 
         choice3.warningCheck();

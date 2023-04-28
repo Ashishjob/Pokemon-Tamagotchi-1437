@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Pokemon {
     public:
         Pokemon(); //First constructor to set the stats of the chosen Pokemon
@@ -22,7 +24,7 @@ class Pokemon {
 
         void loadGame();
         void resetGame();
-        void setSpeciesName();
+        void setSpeciesName(string pokemonName);
 
         string getSpeciesName();
 

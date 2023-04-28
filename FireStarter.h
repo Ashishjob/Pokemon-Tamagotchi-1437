@@ -17,11 +17,14 @@ class FireStarter: public Pokemon{
         void heal();
         void feed();
         void play();
+        void viewStats();
         void evolutionCheck();
         void warningCheck();
         bool gameLoss();
         void limitControl();
         void setSpeciesName(string pokemonName);
+        void saveGame();
+        void loadGame();
         string getSpeciesName();
 };
 
