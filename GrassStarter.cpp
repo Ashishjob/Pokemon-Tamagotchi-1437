@@ -84,13 +84,6 @@ void GrassStarter::saveGame() {
     // save all the stats to saveFile.txt
 }
 
-void GrassStarter::loadGame() {
-    // read saveFile.txt and adjust the stats to match accordingly
-}
-
-void Pokemon::resetGame() {
-    // whenever the game is finished win or loss, delete saveFile.txt
-}
 
 bool GrassStarter::gameLoss() {
     if ((health == 0 || hunger == 100 || happiness == 0)) {

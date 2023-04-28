@@ -84,14 +84,6 @@ void FireStarter::saveGame() {
     // save all the stats to saveFile.txt
 }
 
-void FireStarter::loadGame() {
-    // read saveFile.txt and adjust the stats to match accordingly
-}
-
-void Pokemon::resetGame() {
-    // whenever the game is finished win or loss, delete saveFile.txt
-}
-
 bool FireStarter::gameLoss() {
     if ((health == 0 || hunger == 100 || happiness == 0)) {
         cout << "boohoo you lost. ratio. bozo" << endl;
