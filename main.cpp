@@ -28,10 +28,35 @@ int main() {
         cin >> selectionNumber;
     }
 
+    if (selectionNumber != 1 && selectionNumber != 2 && selectionNumber != 3) {
+      cout << "That is not an option, please try again" << endl;
+      cin >> selectionNumber;
+      bool ans = false;
+      while (ans == false) {
+        if (selectionNumber != 1 && selectionNumber != 2 && selectionNumber != 3) {
+          cout << "That is not an option, please try again" << endl;
+          ans = false;
+          cin >> selectionNumber;
+        }
+        else {
+          ans = true;
+        }
+      }
+    }
+
+    int newSelectionNumber = 0;
     while (selectionNumber != 1 && selectionNumber != 2 && selectionNumber != 3) {
         cout << "That is not  an appropriate number to put in, please input again" << endl;
-        cin >> selectionNumber;
+        cin >> newSelectionNumber;
+        if (newSelectionNumber == 1 || newSelectionNumber == 2 || newSelectionNumber == 3) {
+          selectionNumber = newSelectionNumber;
+        }
+        else {
+          continue;
+        }
     }
+
+    // account for this better
 
     if (selectionNumber == 1) {
       GrassStarter choice1;
@@ -52,18 +77,22 @@ int main() {
         cin >> chosenAction;
 
         if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
-          bool chosenActionResponse = false;
-          while (bool chosenActionResponse = false) {
+          cout << "That is not an option, please try again" << endl;
+          cin >> chosenAction;
+          bool ans = false;
+          while (ans == false) {
             if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
-              cout << "That was not a proper choice, reselect your option" << endl;
-              chosenActionResponse = false;
+              cout << "That is not an option, please try again" << endl;
+              ans = false;
               cin >> chosenAction;
             }
             else {
-              chosenActionResponse = true;
+              ans = true;
             }
           }
         }
+
+        // account for this better
         
         if (chosenAction == 1) {
           choice1.train();
@@ -130,15 +159,17 @@ int main() {
 
 
         if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
-          bool chosenActionResponse = false;
-          while (bool chosenActionResponse = false) {
+          cout << "That is not an option, please try again" << endl;
+          cin >> chosenAction;
+          bool ans = false;
+          while (ans == false) {
             if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
-              cout << "That was not a proper choice, reselect your option" << endl;
-              chosenActionResponse = false;
+              cout << "That is not an option, please try again" << endl;
+              ans = false;
               cin >> chosenAction;
             }
             else {
-              chosenActionResponse = true;
+              ans = true;
             }
           }
         }
@@ -207,15 +238,17 @@ int main() {
         cin >> chosenAction;
 
         if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
-          bool chosenActionResponse = false;
-          while (bool chosenActionResponse = false) {
+          cout << "That is not an option, please try again" << endl;
+          cin >> chosenAction;
+          bool ans = false;
+          while (ans == false) {
             if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
-              cout << "That was not a proper choice, reselect your option" << endl;
-              chosenActionResponse = false;
+              cout << "That is not an option, please try again" << endl;
+              ans = false;
               cin >> chosenAction;
             }
             else {
-              chosenActionResponse = true;
+              ans = true;
             }
           }
         }
