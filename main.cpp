@@ -51,9 +51,18 @@ int main() {
         
         cin >> chosenAction;
 
-        while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
-          cout << "That was not a proper choice, reselect your option" << endl;
-            cin >> chosenAction;
+        if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
+          bool chosenActionResponse = false;
+          while (bool chosenActionResponse = false) {
+            if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
+              cout << "That was not a proper choice, reselect your option" << endl;
+              chosenActionResponse = false;
+              cin >> chosenAction;
+            }
+            else {
+              chosenActionResponse = true;
+            }
+          }
         }
         
         if (chosenAction == 1) {
@@ -197,9 +206,18 @@ int main() {
         
         cin >> chosenAction;
 
-        while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
-          cout << "That was not a proper choice, reselect your option" << endl;
-          cin >> chosenAction;
+        if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
+          bool chosenActionResponse = false;
+          while (bool chosenActionResponse = false) {
+            if (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5 && chosenAction != 6) {
+              cout << "That was not a proper choice, reselect your option" << endl;
+              chosenActionResponse = false;
+              cin >> chosenAction;
+            }
+            else {
+              chosenActionResponse = true;
+            }
+          }
         }
         
         if (chosenAction == 1) {
