@@ -158,19 +158,12 @@ int main() {
         
         choice2.evolutionCheck();
 
-        if (choice2.gameLoss() == true) {
-          cout << "boohoo you lost. ratio. bozo" << endl;
-          gameFinish = true;
-        }
-
-        else if (choice2.gameLoss() == false) {
-          cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
-          // output the final evolution ASCII art from its .txt file
+        if (choice1.gameLoss() == true) {
           gameFinish = true;
         }
         
-        else {
-          choice2.limitControl();
+        else if (choice1.gameLoss() == false) {
+          choice1.limitControl();
           gameFinish = false;
         }
       }  
@@ -233,19 +226,12 @@ int main() {
         
         choice3.evolutionCheck();
 
-        if (choice3.gameLoss() == true) {
-          cout << "boohoo you lost. ratio. bozo" << endl;
-          gameFinish = true;
-        }
-
-        else if (choice3.gameLoss() == false) {
-          cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
-          // output the final evolution ASCII art from its .txt file
+        if (choice1.gameLoss() == true) {
           gameFinish = true;
         }
         
-        else {
-          choice3.limitControl();
+        else if (choice1.gameLoss() == false) {
+          choice1.limitControl();
           gameFinish = false;
         }
       }
