@@ -6,7 +6,7 @@
 #include <iostream>
 #include <fstream>
 
-using namespace::std;
+using namespace std;
 
 int main() {
   char answer = 'n';
@@ -34,204 +34,210 @@ int main() {
     }
 
     if (selectionNumber == 1) {
-      GrassStarter choice1
-      choice1.GrassStarter() // use the default constructor and setter values to get the beginning variables set in place
+      GrassStarter choice1;
       cout << "Great, now lets begin growing your Bulbasaur!!!" << endl;
             
-      while (gameFinish == false): 
-      cout << "What actions would you like to do with your Pokemon:" << endl;
-                
-      cout << "---------------------------------" << endl;
-      cout << "| 1 - Train your Pokemon        |" << endl;
-      cout << "| 2 - Heal your Pokemon         |" << endl;
-      cout << "| 3 - Feed your Pokemon         |" << endl;
-      cout << "| 4 - Play with your Pokemon    |" << endl;
-      cout << "| 5 - View your Pokemon's stats |" << endl;
-      cout << "---------------------------------" << endl;
-      
-      cin >> chosenAction;
-
-      while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
-        cout << "That was not a proper choice, reselect your option" << endl;
-          cin >> chosenAction;
-      }
-      
-      if (chosenAction == 1) {
-        choice1.train();
-        // train function is called
-      }
+      while (gameFinish == false) {
+        cout << "What actions would you like to do with your Pokemon:" << endl;
+                  
+        cout << "---------------------------------" << endl;
+        cout << "| 1 - Train your Pokemon        |" << endl;
+        cout << "| 2 - Heal your Pokemon         |" << endl;
+        cout << "| 3 - Feed your Pokemon         |" << endl;
+        cout << "| 4 - Play with your Pokemon    |" << endl;
+        cout << "| 5 - View your Pokemon's stats |" << endl;
+        cout << "---------------------------------" << endl;
         
-      else if (chosenAction == 2){
-        choice1.heal();
-        // heal function is called
-      }
+        cin >> chosenAction;
+
+        while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
+          cout << "That was not a proper choice, reselect your option" << endl;
+            cin >> chosenAction;
+        }
         
-      else if (chosenAction == 3){
-        choice1.feed();
-        // feed function is called
-      }
+        if (chosenAction == 1) {
+          choice1.train();
+          // train function is called
+        }
+          
+        else if (chosenAction == 2){
+          choice1.heal();
+          // heal function is called
+        }
+          
+        else if (chosenAction == 3){
+          choice1.feed();
+          // feed function is called
+        }
+          
+        else if (chosenAction == 4){
+          choice1.play();
+          // play function is called
+        }
+
+        else if (chosenAction == 5){
+          choice1.viewStats();
+          // viewStats function is called
+        }
+
+        choice1.warningCheck();
         
-      else if (chosenAction == 4){
-        choice1.play();
-        // play function is called
-      }
+        choice1.evolutionCheck();
 
-      else if (chosenAction == 5){
-        choice1.viewStats();
-        // viewStats function is called
-      }
+        if (choice1.gameLoss() == true) {
+          cout << "boohoo you lost. ratio. bozo" << endl;
+          gameFinish = true;
+        }
 
-      choice1.warningCheck();
-      
-      choice1.evolutionCheck();
-
-      if (choice1.gameLoss() == true) {
-        cout << "boohoo you lost. ratio. bozo" << endl;
-        gameFinish = true;
+        else if (choice1.gameLoss() == false) {
+          cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
+          // output the final evolution ASCII art from its .txt file
+          gameFinish = true;
+        }
+        
+        else {
+          choice1.limitControl();
+          gameFinish = false;
+        }
       }
-
-      else if (choice1.gameLoss() == false) {
-        cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
-        // output the final evolution ASCII art from its .txt file
-        gameFinish = true;
-      }
-      
-      else {
-        gameFinish = false;
-      }
+    }
       
     if (selectionNumber == 2) {
-      WaterStarter choice2
-      choice2.WaterStarter() // use the default constructor and setter values to get the beginning variables set in place
+      WaterStarter choice2;
       cout << "Great, now lets begin growing your Squirtle!!!" << endl;
             
-      while (gameFinish == false): 
-      cout << "What actions would you like to do with your Pokemon:" << endl;
-                
-      cout << "---------------------------------" << endl;
-      cout << "| 1 - Train your Pokemon        |" << endl;
-      cout << "| 2 - Heal your Pokemon         |" << endl;
-      cout << "| 3 - Feed your Pokemon         |" << endl;
-      cout << "| 4 - Play with your Pokemon    |" << endl;
-      cout << "| 5 - View your Pokemon's stats |" << endl;
-      cout << "---------------------------------" << endl;
-      
-      cin >> chosenAction;
-
-      while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
-        cout << "That was not a proper choice, reselect your option" << endl;
-          cin >> chosenAction;
-      }
-      
-      if (chosenAction == 1) {
-        choice2.train();
-        // train function is called
-      }
+      while (gameFinish == false) {
+        cout << "What actions would you like to do with your Pokemon:" << endl;
+                  
+        cout << "---------------------------------" << endl;
+        cout << "| 1 - Train your Pokemon        |" << endl;
+        cout << "| 2 - Heal your Pokemon         |" << endl;
+        cout << "| 3 - Feed your Pokemon         |" << endl;
+        cout << "| 4 - Play with your Pokemon    |" << endl;
+        cout << "| 5 - View your Pokemon's stats |" << endl;
+        cout << "---------------------------------" << endl;
         
-      else if (chosenAction == 2){
-        choice2.heal();
-        // heal function is called
-      }
+        cin >> chosenAction;
+
+        while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
+          cout << "That was not a proper choice, reselect your option" << endl;
+            cin >> chosenAction;
+        }
         
-      else if (chosenAction == 3){
-        choice2.feed();
-        // feed function is called
-      }
+        if (chosenAction == 1) {
+          choice2.train();
+          // train function is called
+        }
+          
+        else if (chosenAction == 2){
+          choice2.heal();
+          // heal function is called
+        }
+          
+        else if (chosenAction == 3){
+          choice2.feed();
+          // feed function is called
+        }
+          
+        else if (chosenAction == 4){
+          choice2.play();
+          // play function is called
+        }
+
+        else if (chosenAction == 5){
+          choice2.viewStats();
+          // viewStats function is called
+        }
+
+        choice2.warningCheck();
         
-      else if (chosenAction == 4){
-        choice2.play();
-        // play function is called
-      }
+        choice2.evolutionCheck();
 
-      else if (chosenAction == 5){
-        choice2.viewStats();
-        // viewStats function is called
-      }
+        if (choice2.gameLoss() == true) {
+          cout << "boohoo you lost. ratio. bozo" << endl;
+          gameFinish = true;
+        }
 
-      choice2.warningCheck();
-      
-      choice2.evolutionCheck();
-
-      if (choice2.gameLoss() == true) {
-        cout << "boohoo you lost. ratio. bozo" << endl;
-        gameFinish = true;
-      }
-
-      else if (choice2.gameLoss() == false) {
-        cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
-        // output the final evolution ASCII art from its .txt file
-        gameFinish = true;
-      }
-      
-      else {
-        gameFinish = false;
-      }
+        else if (choice2.gameLoss() == false) {
+          cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
+          // output the final evolution ASCII art from its .txt file
+          gameFinish = true;
+        }
+        
+        else {
+          choice2.limitControl();
+          gameFinish = false;
+        }
+      }  
+    }
 
     if (selectionNumber == 3) {
-      FireStarter choice3
-      choice3.FireStarter() // use the default constructor and setter values to get the beginning variables set in place
+      FireStarter choice3;
       cout << "Great, now lets begin growing your Charmander!!!" << endl;
             
-      while (gameFinish == false): 
-      cout << "What actions would you like to do with your Pokemon:" << endl;
-                
-      cout << "---------------------------------" << endl;
-      cout << "| 1 - Train your Pokemon        |" << endl;
-      cout << "| 2 - Heal your Pokemon         |" << endl;
-      cout << "| 3 - Feed your Pokemon         |" << endl;
-      cout << "| 4 - Play with your Pokemon    |" << endl;
-      cout << "| 5 - View your Pokemon's stats |" << endl;
-      cout << "---------------------------------" << endl;
-      
-      cin >> chosenAction;
-
-      while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
-        cout << "That was not a proper choice, reselect your option" << endl;
+      while (gameFinish == false) {
+        cout << "What actions would you like to do with your Pokemon:" << endl;
+                  
+        cout << "---------------------------------" << endl;
+        cout << "| 1 - Train your Pokemon        |" << endl;
+        cout << "| 2 - Heal your Pokemon         |" << endl;
+        cout << "| 3 - Feed your Pokemon         |" << endl;
+        cout << "| 4 - Play with your Pokemon    |" << endl;
+        cout << "| 5 - View your Pokemon's stats |" << endl;
+        cout << "---------------------------------" << endl;
+        
         cin >> chosenAction;
-      }
-      
-      if (chosenAction == 1) {
-        choice3.train();
-        // train function is called
-      }
+
+        while (chosenAction != 1 && chosenAction != 2 && chosenAction != 3 && chosenAction != 4 && chosenAction != 5) {
+          cout << "That was not a proper choice, reselect your option" << endl;
+          cin >> chosenAction;
+        }
         
-      else if (chosenAction == 2){
-        choice3.heal();
-        // heal function is called
-      }
+        if (chosenAction == 1) {
+          choice3.train();
+          // train function is called
+        }
+          
+        else if (chosenAction == 2){
+          choice3.heal();
+          // heal function is called
+        }
+          
+        else if (chosenAction == 3){
+          choice3.feed();
+          // feed function is called
+        }
+          
+        else if (chosenAction == 4){
+          choice3.play();
+          // play function is called
+        }
+
+        else if (chosenAction == 5){
+          choice3.viewStats();
+          // viewStats function is called
+        }
+
+        choice3.warningCheck();
         
-      else if (chosenAction == 3){
-        choice3.feed();
-        // feed function is called
-      }
+        choice3.evolutionCheck();
+
+        if (choice3.gameLoss() == true) {
+          cout << "boohoo you lost. ratio. bozo" << endl;
+          gameFinish = true;
+        }
+
+        else if (choice3.gameLoss() == false) {
+          cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
+          // output the final evolution ASCII art from its .txt file
+          gameFinish = true;
+        }
         
-      else if (chosenAction == 4){
-        choice3.play();
-        // play function is called
+        else {
+          choice3.limitControl();
+          gameFinish = false;
+        }
       }
-
-      else if (chosenAction == 5){
-        choice3.viewStats();
-        // viewStats function is called
-      }
-
-      choice3.warningCheck();
-      
-      choice3.evolutionCheck();
-
-      if (choice3.gameLoss() == true) {
-        cout << "boohoo you lost. ratio. bozo" << endl;
-        gameFinish = true;
-      }
-
-      else if (choice3.gameLoss() == false) {
-        cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
-        // output the final evolution ASCII art from its .txt file
-        gameFinish = true;
-      }
-      
-      else {
-        gameFinish = false;
-      }
-    return 0;
+    }
+  return 0;
 }
