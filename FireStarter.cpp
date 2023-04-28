@@ -85,7 +85,7 @@ void FireStarter::saveGame() {
 }
 
 bool FireStarter::gameLoss() {
-    if ((health == 0 || hunger == 100 || happiness == 0)) {
+    if ((health <= 0 || hunger >= 100 || happiness <= 0)) {
         cout << "boohoo you lost. ratio. bozo" << endl;
         return true;
     }
