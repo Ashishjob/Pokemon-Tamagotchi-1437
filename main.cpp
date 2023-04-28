@@ -158,12 +158,12 @@ int main() {
         
         choice2.evolutionCheck();
 
-        if (choice1.gameLoss() == true) {
+        if (choice2.gameLoss() == true) {
           gameFinish = true;
         }
         
-        else if (choice1.gameLoss() == false) {
-          choice1.limitControl();
+        else if (choice2.gameLoss() == false) {
+          choice2.limitControl();
           gameFinish = false;
         }
       }  
@@ -226,12 +226,12 @@ int main() {
         
         choice3.evolutionCheck();
 
-        if (choice1.gameLoss() == true) {
+        if (choice3.gameLoss() == true) {
           gameFinish = true;
         }
         
-        else if (choice1.gameLoss() == false) {
-          choice1.limitControl();
+        else if (choice3.gameLoss() == false) {
+          choice3.limitControl();
           gameFinish = false;
         }
       }
