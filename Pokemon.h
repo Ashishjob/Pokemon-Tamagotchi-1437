@@ -37,7 +37,6 @@ class Pokemon {
         int health = 50;
 
     private:
-        string fileName = "saveFile.txt";
         string speciesName = "";
 };
 
