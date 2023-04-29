@@ -76,6 +76,7 @@ void FireStarter::evolutionCheck() {
   if (level == 16) {
     cout << "Looks like your Charmander is ready for its first evolution!!!"
          << endl;
+    level += 1;
 
     fstream inputCharmeleonFile;
     inputCharmeleonFile.open(
@@ -95,6 +96,7 @@ void FireStarter::saveGame() {
 }
 
 bool FireStarter::gameLoss() {
+    string line;
   if ((health <= 0 || hunger >= 100 || happiness <= 0)) {
     cout << "boohoo you lost. ratio. bozo" << endl;
     return true;
@@ -102,6 +104,13 @@ bool FireStarter::gameLoss() {
     cout << "Congrats you've witnessed your Pokemon travel from its first "
             "stage to its final Evolution!!!"
          << endl;
+    fstream inputCharizardFile;
+    inputCharizardFile.open(
+        "Pokemon-Tamagotchi-1437-main/.txt files/Charizard.txt");
+    while (getline(inputCharizardFile, line)) {
+      cout << line << endl;
+    }
+    inputCharizardFile.close();
     // output the final evolution ASCII art from its .txt file
     return true;
   } else {

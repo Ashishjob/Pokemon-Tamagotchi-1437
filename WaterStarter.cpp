@@ -76,6 +76,7 @@ void WaterStarter::evolutionCheck() {
   if (level == 16) {
     cout << "Looks like your Squirtle is ready for its first evolution!!!"
          << endl;
+    level += 1;
 
     fstream inputWartortleFile;
     inputWartortleFile.open(
@@ -95,6 +96,7 @@ void WaterStarter::saveGame() {
 }
 
 bool WaterStarter::gameLoss() {
+    string line;
   if ((health <= 0 || hunger >= 100 || happiness <= 0)) {
     cout << "boohoo you lost. ratio. bozo" << endl;
     return true;
@@ -102,6 +104,15 @@ bool WaterStarter::gameLoss() {
     cout << "Congrats you've witnessed your Pokemon travel from its first "
             "stage to its final Evolution!!!"
          << endl;
+    
+    fstream inputBlastoiseFile;
+    inputBlastoiseFile.open(
+        "Pokemon-Tamagotchi-1437-main/.txt files/Blastoise.txt");
+    while (getline(inputBlastoiseFile, line)) {
+      cout << line << endl;
+    }
+    inputBlastoiseFile.close();
+    
     // output the final evolution ASCII art from its .txt file
     return true;
   } else {

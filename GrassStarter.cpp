@@ -76,6 +76,7 @@ void GrassStarter::evolutionCheck() {
     string line;
     if (level == 16) {
         cout << "Looks like your Bulbasaur is ready for its first evolution!!!" << endl;
+      level += 1;
 
         fstream inputIvysaurFile;
         inputIvysaurFile.open("Pokemon-Tamagotchi-1437-main/.txt files/Ivysaur.txt");
@@ -95,12 +96,20 @@ void GrassStarter::saveGame() {
 
 
 bool GrassStarter::gameLoss() {
+    string line;
     if ((health <= 0 || hunger >= 100 || happiness <= 0)) {
         cout << "boohoo you lost. ratio. bozo" << endl;
         return true;
     }
     else if (level == 32) {
         cout << "Congrats you've witnessed your Pokemon travel from its first stage to its final Evolution!!!" << endl;
+      fstream inputVenusaurFile;
+    inputVenusaurFile.open(
+        "Pokemon-Tamagotchi-1437-main/.txt files/Venusaur.txt");
+    while (getline(inputVenusaurFile, line)) {
+      cout << line << endl;
+    }
+    inputVenusaurFile.close();
         // output the final evolution ASCII art from its .txt file
         return true;
     }
