@@ -16,13 +16,28 @@
 
 ## **Changes Made to the Preliminary Report**
 
-- removed the private member fileName in the parent class
-- 
-- remade the default constructor to use parameters that were not already set in place
-- added a boolean virtual function to end the game if points of victory or defeat are reached and added it to each inherited class
-- made the loadGame function virtual and added it to each inherited class
-- implemented unique statements for every action done by the Pokemon
-- implemented ASCII art for wherever they were fit
-- changed evolve function into the evolutionCheck function to check when requirements are met to evolve and added it to each inherited class
-- made the virtual train function into a pure virtual function and added it to each inherited class
-- made saveGame function not require any parameters
+- It really isn't just a Tamagotchi, but a half Tamagotchi/half RPG
+- Removed the private member fileName in the parent class
+- Remade the default constructor to use parameters that were not already set in place
+- Added a boolean virtual function to end the game if points of victory or defeat are reached and added it to each inherited class
+- Made the loadGame function virtual and added it to each inherited class
+- Implemented unique statements for every action done by the Pokemon
+- Implemented ASCII art for wherever they were fit
+- Changed evolve function into the evolutionCheck function to check when requirements are met to evolve and added it to each inherited class
+- Made the virtual train function into a pure virtual function and added it to each inherited class
+- Made saveGame function not require any parameters
+
+---
+
+## **Future Plans**
+
+- Write everything in cleaner code and allow for less manual interactions from the player
+    - ###### Specifically the function used to load a previous game
+- Print the Pokemon's ASCII image each time the loop runs (just for nicer graphics)
+- Make the game have a hard mode, where the user is not given warningChecks or the ability to viewStats
+- Make the game harder in general with more significant changes to the Pokemon's stats
+- Make animations for each task done (would require personal ability to make ASCII art but still cool)
+- Make the code more efficient (I think there's a way to write it with much less lines of code, just don't know how yet)
+- Add more Pokemon to the game, and more actions that you can do with the Pokemon
+
+---
