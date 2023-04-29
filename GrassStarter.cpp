@@ -21,16 +21,19 @@ string GrassStarter::getSpeciesName() {
 void GrassStarter::play() {
     happiness += 5;
     hunger += 15;
+    cout << speciesName << " had so much fun touching grass (not a CS major for sure)!!" << endl;
 }
 
 void GrassStarter::heal() {
     health += 10;
     happiness += 15;
+    cout << speciesName << " feels so much better after taking a quick nap in the garden (touching grass btw) !!" << endl;
 }
 
 void GrassStarter::feed() {
     hunger -= 10;
     health += 5;
+    cout << speciesName << " sure wishes there were more Golden Razz Berries to 'munch' on after that one!!" << endl;
 }
 
 void GrassStarter::train() {
@@ -38,6 +41,7 @@ void GrassStarter::train() {
     happiness -= 15;
     hunger += 20;
     health -= 20;
+    cout << speciesName << " just went crazy against that magikarp, and nearly made the fish drown!!" << endl;
 }
 
 void GrassStarter::limitControl() {
@@ -62,13 +66,13 @@ void GrassStarter::viewStats() {
 
 void GrassStarter::warningCheck() {
     if (health <= 15 && health > 0) {
-        cout << "Woah there pal, your " << speciesName << " isn't looking so healthy" << endl;
+        cout << "Woah there pal, your " << speciesName << " isn't looking so healthy, let it sleep (while touching grass)" << endl;
     }
     if (hunger >= 85 && hunger < 100) {
-        cout << "You really don't care about how hungry your " << speciesName << " is" << endl;
+        cout << "You really don't care about how hungry your " << speciesName << " is, let it be a munch" << endl;
     }
     if (happiness <= 15 && happiness > 0) {
-        cout << "Damn, you really don't care about your " << speciesName << "'s happiness" << endl;
+        cout << "Damn, you really don't care about your " << speciesName << "'s happiness, let it touch some grass" << endl;
     }
 }
 

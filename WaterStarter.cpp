@@ -17,16 +17,19 @@ string WaterStarter::getSpeciesName() { return speciesName; }
 void WaterStarter::play() {
   happiness += 5;
   hunger += 15;
+  cout << speciesName << " had so much fun making everyone slip!!" << endl;
 }
 
 void WaterStarter::heal() {
   health += 10;
   happiness += 15;
+  cout << speciesName << " got so much rest from nearly drowning!!" << endl;
 }
 
 void WaterStarter::feed() {
   hunger -= 10;
   health += 5;
+  cout << speciesName << " could not control itself from showing its munch tendencies!!" << endl;
 }
 
 void WaterStarter::train() {
@@ -34,6 +37,7 @@ void WaterStarter::train() {
   happiness -= 15;
   hunger += 20;
   health -= 20;
+  cout << speciesName << " gave the Geodude CS Major a shower for once!!" << endl;
 }
 
 void WaterStarter::limitControl() {
@@ -59,15 +63,15 @@ void WaterStarter::viewStats() {
 void WaterStarter::warningCheck() {
   if (health <= 15 && health > 0) {
     cout << "Woah there pal, your " << speciesName
-         << " isn't looking so healthy" << endl;
+         << " isn't looking so healthy, let it nearly drown in the water to make it feel healthier" << endl;
   }
   if (hunger >= 85 && hunger < 100) {
     cout << "You really don't care about how hungry your " << speciesName
-         << " is" << endl;
+         << " is, let it showcase its true munch tendencies" << endl;
   }
   if (happiness <= 15 && happiness > 0) {
     cout << "Damn, you really don't care about your " << speciesName
-         << "'s happiness" << endl;
+         << "'s happiness, let it witness the joy of making people slip" << endl;
   }
 }
 
