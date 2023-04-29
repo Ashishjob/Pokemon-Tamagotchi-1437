@@ -96,7 +96,15 @@ void WaterStarter::evolutionCheck() {
 }
 
 void WaterStarter::saveGame() {
-  // save all the stats to saveFile.txt
+  ofstream saveData;
+  saveData.open("saveFile.txt");
+  saveData << level << endl << hunger << endl << health << endl << happiness << endl;
+}
+
+void WaterStarter::loadGame() {
+  ifstream loadData;
+  loadData.open("saveFile.txt");
+  loadData >> level >> hunger >> health >> happiness;
 }
 
 bool WaterStarter::gameLoss() {
@@ -116,8 +124,6 @@ bool WaterStarter::gameLoss() {
       cout << line << endl;
     }
     inputBlastoiseFile.close();
-    
-    // output the final evolution ASCII art from its .txt file
     return true;
   } else {
     return false;

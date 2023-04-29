@@ -1,6 +1,7 @@
 #include "Pokemon.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -68,15 +69,19 @@ void Pokemon::evolutionCheck() {
 }
 
 void Pokemon::saveGame() {
-    // save all the stats to saveFile.txt
+    ofstream saveData;
+    saveData.open("saveFile.txt");
+    saveData << level << endl << hunger << endl << health << endl << happiness << endl;
 }
 
 void Pokemon::loadGame() {
-    // read saveFile.txt and adjust the stats to match accordingly
+    ifstream loadData;
+    loadData.open("saveFile.txt");
+    loadData >> level >> hunger >> health >> happiness;
 }
 
 void Pokemon::resetGame() {
-    // whenever the game is finished win or loss, delete saveFile.txt
+    remove("saveFile.txt");
 }
 
 bool Pokemon::gameLoss() {

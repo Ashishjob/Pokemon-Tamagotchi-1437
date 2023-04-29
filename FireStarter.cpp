@@ -96,7 +96,15 @@ void FireStarter::evolutionCheck() {
 }
 
 void FireStarter::saveGame() {
-  // save all the stats to saveFile.txt
+  ofstream saveData;
+  saveData.open("saveFile.txt");
+  saveData << level << endl << hunger << endl << health << endl << happiness << endl;
+}
+
+void FireStarter::loadGame() {
+  ifstream loadData;
+  loadData.open("saveFile.txt");
+  loadData >> level >> hunger >> health >> happiness;
 }
 
 bool FireStarter::gameLoss() {
@@ -115,7 +123,6 @@ bool FireStarter::gameLoss() {
       cout << line << endl;
     }
     inputCharizardFile.close();
-    // output the final evolution ASCII art from its .txt file
     return true;
   } else {
     return false;

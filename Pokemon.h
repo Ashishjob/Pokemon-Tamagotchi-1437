@@ -21,8 +21,8 @@ class Pokemon {
         virtual void warningCheck(); // Gives a warning when a specific level is too low
         virtual void evolutionCheck();
         virtual void saveGame();
-
-        void loadGame();
+        virtual void loadGame();
+        
         void resetGame();
         void setSpeciesName(string pokemonName);
 

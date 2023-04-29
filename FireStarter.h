@@ -24,6 +24,7 @@ class FireStarter: public Pokemon{
         void limitControl();
         void setSpeciesName(string pokemonName);
         void saveGame();
+        void loadGame();
         string getSpeciesName();
 };
 

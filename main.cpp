@@ -42,9 +42,26 @@ int main() {
   cin >> answer;
 
   if (answer == 'y') {
-    // loadGame();
+    cout << "Which Pokemon did you select (1 - Bulbasaur, 2 - Squirtle, 3 - Charmander)" << endl;
+    int loadAnswer;
+    cin >> loadAnswer;
+    if (loadAnswer == 1) {
+      GrassStarter choice1;
+      choice1.loadGame();
+      selectionNumber = 1;
+    }
+    else if (loadAnswer == 2) {
+      WaterStarter choice2;
+      choice2.loadGame();
+      selectionNumber = 2;
+    }
+    else if (loadAnswer == 3) {
+      FireStarter choice3;
+      choice3.loadGame();
+      selectionNumber = 3;
+    }
   }
-
+  
   else {
     cout << "Looks like you're new!!! Please select one of the choices from "
             "the options below"
@@ -109,8 +126,6 @@ int main() {
       continue;
     }
   }
-
-  // account for this better
 
   if (selectionNumber == 1) {
     GrassStarter choice1;
