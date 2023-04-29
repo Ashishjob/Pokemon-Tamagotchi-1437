@@ -43,23 +43,7 @@ int main() {
 
   if (answer == 'y') {
     cout << "Which Pokemon did you select (1 - Bulbasaur, 2 - Squirtle, 3 - Charmander)" << endl;
-    int loadAnswer;
-    cin >> loadAnswer;
-    if (loadAnswer == 1) {
-      GrassStarter choice1;
-      choice1.loadGame();
-      selectionNumber = 1;
-    }
-    else if (loadAnswer == 2) {
-      WaterStarter choice2;
-      choice2.loadGame();
-      selectionNumber = 2;
-    }
-    else if (loadAnswer == 3) {
-      FireStarter choice3;
-      choice3.loadGame();
-      selectionNumber = 3;
-    }
+    cin >> selectionNumber;
   }
   
   else {
@@ -129,8 +113,12 @@ int main() {
 
   if (selectionNumber == 1) {
     GrassStarter choice1;
-    cout << "Great, now lets begin growing your Bulbasaur!!!" << endl;
-
+    if (answer == 'y') {
+      choice1.loadGame();
+    }
+    else {
+      cout << "Great, now lets begin growing your Bulbasaur!!!" << endl;
+    }
     while (gameFinish == false) {
       cout << "What actions would you like to do with your Pokemon:" << endl;
 
@@ -162,8 +150,6 @@ int main() {
         }
       }
 
-      // account for this better
-
       if (chosenAction == 1) {
         choice1.train();
         // train function is called
@@ -192,10 +178,10 @@ int main() {
       else if (chosenAction == 6) {
         choice1.saveGame();
         cout << "See you next time!" << endl;
+        break;
       }
 
       choice1.warningCheck();
-
       choice1.evolutionCheck();
 
       if (choice1.gameLoss() == true) {
@@ -211,7 +197,12 @@ int main() {
 
   if (selectionNumber == 2) {
     WaterStarter choice2;
-    cout << "Great, now lets begin growing your Squirtle!!!" << endl;
+    if (answer == 'y') {
+      choice2.loadGame();
+    }
+    else {
+      cout << "Great, now lets begin growing your Bulbasaur!!!" << endl;
+    }
 
     while (gameFinish == false) {
       cout << "What actions would you like to do with your Pokemon:" << endl;
@@ -272,10 +263,10 @@ int main() {
       else if (chosenAction == 6) {
         choice2.saveGame();
         cout << "See you next time!" << endl;
+        break;
       }
 
       choice2.warningCheck();
-
       choice2.evolutionCheck();
 
       if (choice2.gameLoss() == true) {
@@ -291,7 +282,12 @@ int main() {
 
   if (selectionNumber == 3) {
     FireStarter choice3;
-    cout << "Great, now lets begin growing your Charmander!!!" << endl;
+    if (answer == 'y') {
+      choice3.loadGame();
+    }
+    else {
+      cout << "Great, now lets begin growing your Bulbasaur!!!" << endl;
+    }
 
     while (gameFinish == false) {
       cout << "What actions would you like to do with your Pokemon:" << endl;
@@ -352,10 +348,10 @@ int main() {
       else if (chosenAction == 6) {
         choice3.saveGame();
         cout << "See you next time!" << endl;
+        break;
       }
 
       choice3.warningCheck();
-
       choice3.evolutionCheck();
 
       if (choice3.gameLoss() == true) {
