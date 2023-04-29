@@ -14,6 +14,33 @@
 
 ---
 
+## **My Reflections**
+
+### **What I Learned/Incorporated Methods**
+
+- GitHub/Git
+- UML's (Unified Modeling Language)
+- Documentation
+- File I/O
+- Object-Oriented Programming
+- Time-Management
+- ASCII Art
+- HTML
+- Markdown
+- Polymorphism
+- Class Inheritance
+
+### **Struggles I Experienced Along the Way**
+
+- Basic semantic faults such as loops that had to be called for incorrect user inputs
+- Forgetting how to use file input and output for the save and load functions
+- Getting completely lost about appropraite setters and getters
+- Getting lost about creating my UML (and designing it to be better each time)
+- Forgetting to write about what each function did and forgetting where I left off
+- Making different text sizes and designing with HTML and Markdown
+
+---
+
 ## **Changes Made to the Preliminary Report**
 
 - It really isn't just a Tamagotchi, but a half Tamagotchi/half RPG
@@ -23,7 +50,7 @@
 - Made the loadGame function virtual and added it to each inherited class
 - Implemented unique statements for every action done by the Pokemon
 - Implemented ASCII art for wherever they were fit
-- Changed evolve function into the evolutionCheck function to check when requirements are met to evolve and added it to each inherited class
+- Changed evolve function into evolutionCheck to check when requirements are met to evolve and added it to each inherited class
 - Made the virtual train function into a pure virtual function and added it to each inherited class
 - Made saveGame function not require any parameters
 
@@ -31,8 +58,7 @@
 
 ## **Future Plans**
 
-- Write everything in cleaner code and allow for less manual interactions from the player
-    - ###### Specifically the function used to load a previous game
+- Write everything in cleaner code and have less manual interactions from the player (specifically the function used to load a previous game)
 - Print the Pokemon's ASCII image each time the loop runs (just for nicer graphics)
 - Make the game have a hard mode, where the user is not given warningChecks or the ability to viewStats
 - Make the game harder in general with more significant changes to the Pokemon's stats
