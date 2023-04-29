@@ -2,6 +2,7 @@
 #include "GrassStarter.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -72,11 +73,19 @@ void GrassStarter::warningCheck() {
 }
 
 void GrassStarter::evolutionCheck() {
+    string line;
     if (level == 16) {
         cout << "Looks like your Bulbasaur is ready for its first evolution!!!" << endl;
+
+        fstream inputIvysaurFile;
+        inputIvysaurFile.open("Pokemon-Tamagotchi-1437-main/.txt files/Ivysaur.txt");
+        while (getline(inputIvysaurFile, line)) {
+          cout << line << endl;
+        }
+        inputIvysaurFile.close();
+      
         speciesName = "Ivysaur";
-        // print the ASCII art for Ivysaur
-        cout << "Woahhhh, look at your new Ivysaur!!";
+        cout << "Woahhhh, look at your new Ivysaur!!" << endl;
     }
 }
 
