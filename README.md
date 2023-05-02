@@ -13,5 +13,7 @@ Email : akjob@cougarnet.uh.edu
 </a>
 </div>
 
+<br>
 
+<h6 align = "center"> Side Notes: As previously mentioned, the video can be accessed by clicking the image above, the final report can be found in FinalReport.md, and the overall source code can be accessed by downloading the zip file. </h6>
 
