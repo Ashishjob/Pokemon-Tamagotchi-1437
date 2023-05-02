@@ -22,7 +22,7 @@ int main() {
   }
   inputLogoFile.close(); // Pokemon Logo
 
-  cout << "                   WELCOME TO THE WORLD OF POKEMON (BUT DIFFERENT)"
+  cout << "              WELCOME TO THE WORLD OF POKEMON (BUT DIFFERENT)"
        << endl
        << endl;
 
@@ -44,6 +44,22 @@ int main() {
   if (answer == 'y') {
     cout << "Which Pokemon did you select (1 - Bulbasaur, 2 - Squirtle, 3 - Charmander)" << endl;
     cin >> selectionNumber;
+    
+    if (selectionNumber != 1 && selectionNumber != 2 && selectionNumber != 3) {
+    cout << "That is not an option, please try again" << endl;
+    cin >> selectionNumber;
+    bool ans = false;
+    while (ans == false) {
+      if (selectionNumber != 1 && selectionNumber != 2 &&
+          selectionNumber != 3) {
+        cout << "That is not an option, please try again" << endl;
+        ans = false;
+        cin >> selectionNumber;
+      } else {
+        ans = true;
+      }
+    }
+  }
   }
   
   else {
